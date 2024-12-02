@@ -4,6 +4,9 @@
   "devDependencies": {
     "@types/bun": "latest"
   },
+  "scripts": {
+    "day": "bun run exec.ts"
+  },
   "peerDependencies": {
     "typescript": "^5.0.0"
   }

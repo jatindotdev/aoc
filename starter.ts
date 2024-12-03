@@ -6,7 +6,14 @@ if (process.argv.length < 3) {
   process.exit(1);
 }
 
-const folderName = process.argv[2];
+const folderNo = process.argv[2];
+
+if (isNaN(Number(folderNo))) {
+  console.error("Folder name must be a number");
+  process.exit(1);
+}
+
+const folderName = `day${folderNo}`;
 const folderPath = path.join(process.cwd(), folderName);
 
 try {
